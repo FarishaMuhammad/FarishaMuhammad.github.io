@@ -1,0 +1,185 @@
+<html>    
+<head>  
+<title>Feedback Form</title>   
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>    
+{    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(227, 96, 70);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #FADBD8;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #E6B0AA;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+</style>    
+</head>    
+<body> 
+<body bgcolor ="#F2D7D5"> 
+   <button onclick="history.back()"> Back</button>
+ 
+<h2><i><center>FEEDBACK FORM</center></i></h2> 
+   
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+<form onsubmit="return false;">
+  <input type="text" name="fname" id="fname" 
+         required minlength="2" maxlength="10"/>      </div>    
+    </div>  
+  
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+<form onsubmit="return false;">
+  <input type="text" name="lname" id="lname" 
+         required minlength="2" maxlength="10"/>      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Email</label>    
+        </div>    
+        <div class="col-75">   
+<form onsubmit="return false;"> 
+          <input type="email" id="email" name="mailid" placeholder="Please Enter Your Email"    
+        required minlength="2" maxlength="100"/>
+</div>    
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="Edu">Education</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="edu" name="Education">    
+            <option value="none">Select Education Level</option>    
+          <option value="primary">Primary School</option>    
+          <option value="high school">High School</option>    
+          <option value="diploma">Diploma</option>    
+          <option value="degree">Degree</option> 
+          <option value="working">Working</option>   
+          <option value="others">Others</option>    
+        </select>    
+      </div>    
+    </div> 
+
+  <div class="row">    
+      <div class="col-25">    
+        <label for="state">State</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="state" name="State">    
+            <option value="none">Select Your State</option>    
+          <option value="selangor">Selangor</option>    
+          <option value="sembilan">Negeri Sembilan</option>    
+          <option value="perak">Perak</option>    
+          <option value="sabah">Sabah</option> 
+          <option value="sarawak">Sarawak</option>   
+          <option value="johor">Johor</option> 
+   	    <option value="pahang">Pahang</option> 
+          <option value="malacca">Malacca</option>   
+          <option value="kelantan">Kelantan</option>
+	    <option value="terengganu">Terengganu</option> 
+          <option value="perlis">Perlis</option> 
+          <option value="kelantan">Kelantan</option>
+          <option value="penang">Penang</option> 
+	    <option value="kl">Kuala Lumpur</option> 
+          <option value="labuan">Labuan</option>   
+          <option value="putrajaya">Putrajaya</option>  
+          <option value="others">Others</option> 
+        </select>    
+      </div>    
+    </div> 
+
+<div class="row">    
+      <div class="col-22">    
+        <label for="satisfy">Preferred book genre :</label>    
+      </div>    
+      <div class="col-70"> 
+<center>   
+	<input type='checkbox'name='rom'checked>Romance
+	<input type='checkbox'name='ya'>Young Adult
+	<input type='checkbox'name='mystery'>Mystery
+	<input type='checkbox'name='fantasy'>Fantasy
+	<input type='checkbox'name='mystery'>Mystery
+	<input type='checkbox'name='others'>Others
+</center>
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="What do you think" style="height:200px"></textarea>    
+      </div>    
+    </div>   
+<br> 
+    <div class="row">    
+      <input type="submit" value="Submit">  
+  <script> {
+  alert("Thank you for the time ^^");
+}
+</script>
+    </div>    
+  </form>    
+</div>    
+    
+</body>    
+</html>  
+

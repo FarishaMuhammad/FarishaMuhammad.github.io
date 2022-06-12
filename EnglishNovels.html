@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>English Novels</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: auto;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: center;
+}
+.btn {
+  border: 5px solid white;
+  outline: 10px solid white;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-image: #666;
+  color: white;
+}
+</style>
+<body bgcolor= '#FFEFE8'>
+
+</head>
+<body>
+
+<div class="header" id="myHeader">
+  <button onclick="history.back()"> Back</button>
+<center><h1><i>English Novels</i></h1></center>
+
+
+    <marquee> <i>“There is more treasure in books than in all the pirate’s loot on Treasure Island.”</i></marquee>
+    <marquee direction="right" 
+        behavior="alternate" 
+        style="border:BLACK 5px SOLID">
+        <i>Press the book to be redirected to the page</i>
+    </marquee>
+</div>
+
+
+<div class="row"> 
+
+  <div class="column">
+<center>
+<!b1>
+	<a href="file:///C:/Users/faris/Desktop/264%20assg/b1.html">
+	<img src="https://img1.od-cdn.com/ImageType-100/5054-1/%7B3ADB16B9-E0CE-48E7-9C94-F55571274428%7DImg100.jpg" style="width:50%">
+	</a>
+
+<!b2>
+	<a href="file:///C:/Users/faris/Desktop/264%20assg/b2.html">
+    	<img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630101647l/58014893.jpg" style="width:45%">
+	 </a>
+
+<!b3>  
+	<a href="file:///C:/Users/faris/Desktop/264%20assg/b3.html">
+	<img src="https://a.allegroimg.com/original/11ffce/c8aa32e440559a35f8bd990089cf/ONE-OF-US-IS-LYING-Karen-M-McManus-KSIAZKA" style="width:45%">
+	</a>
+
+<!b4>
+	<a href="file:///C:/Users/faris/Desktop/264%20assg/b4.html">
+   	<img src="https://images-na.ssl-images-amazon.com/images/I/A1WWhjM1+eL.jpg" style="width:45%">
+    	</a>
+
+<!b5>
+<a href="file:///C:/Users/faris/Desktop/264%20assg/b5.html">
+<img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1567775642i/28108881._SY540_.jpg" style="width:50%">
+</a>   
+
+<!b6>
+	<a href="file:///C:/Users/faris/Desktop/264%20assg/b6.html">
+ 	<img src="https://img1.od-cdn.com/ImageType-400/1191-1/B23/357/58/%7BB2335758-9693-42F2-9356-32FE41CCCCF7%7DImg400.jpg" style="width:45%">
+	</a>
+</center>
+  </div>  
+
+</div>
+
+<script>
+var elements = document.getElementsByClassName("column");
+
+var i;
+
+
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<br>
+<hr>
+<center><h6>© 2022 FarishaMuhammad</h6></center>
+<br>
+</body>
+</html>

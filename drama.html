@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>Favourite Korean Drama</title>
+</head>
+<style>
+table, th, td
+ {
+  border:1px solid black;
+}
+
+{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+{box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.myPics {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #d12a78;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+ fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+ only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<body>
+<body bgcolor= '#FFEFE8'>
+  <button onclick="history.back()"> Back</button>
+
+<center><h2>Favourite Korean Drama</h2></center>
+<blockqoute><i><center>All time favourite that you should also
+ try watching :p</center></i></blockqoute>
+<hr>
+<p>The drama posters:</p>
+
+
+<!slide>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <center><img src="https://images.justwatch.com/poster/244016309/s718/answer-me-1988.%7Bformat%7D" alt="reply1988" style="width:20%">
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center><img src="https://m.media-amazon.com/images/M/MV5BYzRjZWJlYjctZmRhYS00N2VhLThlZjktNTE0MWQzOTI3MGJiXkEyXkFqcGdeQXVyNDY5MjMyNTg@._V1_FMjpg_UX1000_.jpg" style="width:20%">
+  </center>
+</div>
+
+<div class="mySlides fade">
+   <center><img src="https://m.media-amazon.com/images/M/MV5BNWE3YjI3M2MtYjAyYS00YjAyLWFkZDAtOTM5NDVjZTY0ZGNiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" style="width:20%">
+ </center></div>
+
+<div class="mySlides fade">
+  <center><img src="https://m.media-amazon.com/images/I/51IRZ64tvtL.jpg" style="width:20%">
+  </center>
+</div>
+
+<div class="mySlides fade">
+   <center><img src="https://m.media-amazon.com/images/M/MV5BOGE2ZDIzZTItOGI2ZS00MWZkLWExM2MtZmRlZTMxMGEzYWM3XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_FMjpg_UX1000_.jpg" style="width:20%">
+ </center></div>
+</div>
+
+<div class="mySlides fade">
+  <center><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Scarletheartryeoposter.jpg/250px-Scarletheartryeoposter.jpg" style="width:20%">
+  </center>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<table style="width:100%">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Rating</th>
+  </tr>
+  <tr>
+   <td><center>Reply 1988</center></td>
+    <td>This is a drama that I won't ever get tired of rewatching.<br>Something that
+is heartwarming,funny dramatic,romantic all in one.Starring Hyeri,Park Bo Gum and Ryu Jun Yeol. </td>
+    <td><center>5/5 </center> </td>
+  </tr>
+  
+  <tr>
+    <td><center>Run On<center></td>
+    <td>A comfort drama which is slow but steady.Some may find it boring but
+to me it is enjoyable.Starring Siwan and Shin Se Kyung. </td>
+    <td><center>4/5</center></td>
+  </tr>
+
+ <tr>
+    <td><center>My Secret Romance</center></td>
+    <td>It maybe cliche but the drama is sweet,fast paced for a quick
+ watch as it would never be boring to the watcher as we will get giddy all the time.
+<br>Starring Sung Hoon and Song Ji Eun.
+</td>
+    <td><center>3.5/5</center></td>
+  </tr>
+
+ <tr>
+    <td><center>The Inheritors</center></td>
+    <td>A classic highschool romance with different social background characters 
+which definitely have some drama.This is also a clssic that never is tiring.
+<br>Starring the iconic Lee Min Ho,Park Shin Hye and Kim Woo Bin.</td>
+    <td><center>4.5</center></td>
+  </tr>
+
+ <tr>
+    <td>Twenty Five Twenty One</td>
+    <td>This is my favourite favourite drama and it is perfect in every way.It is
+funny,romantic,sad and even have soo much value that I can learn and understand.The ending may be
+not what we want,but what is realistic which I like.<br>Starring Kim Tae-Ri and Nam Joo Hyuk</td>
+    <td><center>10/5</center></td>
+  </tr>
+
+ <tr>
+    <td><center>Moon Lovers :<br> Scarlet Heart Ryeo</center></td>
+    <td>Another classic and favourite that features a stunnig cast.A time travelling
+and power struggle drama that is extremely dramatic and cinematic.The relationship
+and chemistry between the cast is also a main factor why I like this drama.<br>
+starring IU,Lee Joon Gi and Kang Ha neul. </td>
+    <td><center>7/5</center></td>
+  </tr>
+</table>
+<br>
+
+<center> <button onclick="history.back()"> Back</button></center>
+
+
+
+</body>
+</html>

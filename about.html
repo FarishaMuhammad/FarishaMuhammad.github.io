@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>Farisha's Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family:  :Times New Roman;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #d93d73;
+  color: white;
+}
+blockquote
+{
+font-style: italic;
+  margin-left: 32px;
+  font-family: Georgia, "Times New Roman", serif;}
+
+<style>
+{box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.myPics {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #d12a78;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+ fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+ only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<body bgcolor= '#FFEFE8'>
+
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="file:///C:/Users/faris/Desktop/264%20assg/HP.html#home">Home</a>
+  <a href="file:///C:/Users/faris/Desktop/264%20assg/about.html">About Me</a>
+  <a href="file:///C:/Users/faris/Desktop/264%20assg/interest.html">My Interest</a>
+  <a href="file:///C:/Users/faris/Desktop/264%20assg/feedback.html">Feedback</a>
+</div>
+<hr>
+
+<div style="padding-left:16px">
+  <center><i><h2>Me <333</h2></i>
+<img src="https://i.pinimg.com/564x/ee/57/d8/ee57d877d053c003064dd0c1c0ddac10.jpg"
+ alt="Pic1" class="center" style="width:200px;height:240px;">
+
+<h4 style="font-family :verdana"align = "center"><i>Hi! My name is Farisha binti Muhammad<i></h4>
+
+</div>
+</center>
+</body>
+<blockquote>
+I was born in Terengganu,raised in Johor Bahru and currently residing in Kuala Lumpur.
+I was born on the 10<sup>th</sup> of November 2002.My interest often differ however
+my passion for reading never seems to go away.That is why i decided to share it here also :3
+Other than that,mussic and drama is also something taht I enjoy on my free time (actually most of time).
+<br>
+I insert some of my pictures with my friends so scoll down below to see.</blockqoute>
+<hr>
+<h3 style="font-family :verdana"align = "left"><i>Here are some of my pictures >>> <i></h3>
+
+<!slide>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <center><img src="https://i.pinimg.com/564x/ee/f2/2d/eef22d2443539fe4b2dc1b64e35b6eb7.jpg" style="width:25%">
+  </center>
+</div>
+
+<div class="mySlides fade">
+  <center><img src="https://i.pinimg.com/564x/26/b3/93/26b39303161c0b70b56bd8588d385d63.jpg" style="width:25%">
+  </center>
+</div>
+
+<div class="mySlides fade">
+   <center><img src="https://i.pinimg.com/564x/f4/b9/18/f4b918d095371288800f033664cd160b.jpg" style="width:25%">
+ </center></div>
+
+<div class="mySlides fade">
+  <center><img src="https://i.pinimg.com/564x/ad/d2/26/add226db3dbde4c44674b4ec0f9b0b94.jpg" style="width:25%">
+  </center>
+</div>
+
+<div class="mySlides fade">
+   <center><img src="https://i.pinimg.com/564x/a4/04/8b/a4048be0298449d19c708bfc1614a263.jpg" style="width:25%">
+ </center></div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<hr>
+<center><h6>© 2022 FarishaMuhammad</h6></center>
+<br>
+
+</html>
